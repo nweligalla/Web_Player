@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Web_player</title>
+</head>
+
+<body>
+
+    <h1>Web_Player</h1>
+    <h4 id="sub-title">A stupidly simple music player</h4>
+
+    <div class="music-container">
+        <div class="music-info">
+            <h4 id="title"></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+            <small id="play-time"></small>
+            <small id="duration-time"></small>
+        </div>
+
+        <audio id=audio></audio>
+        <input type="file" id="choose-file" name=choose-file accept=".mp3" multiple>
+
+        <div class="img-container">
+            <label for="choose-file">
+                <img src="https://www.designyourway.net/blog/wp-content/uploads/2018/12/music_logo-700x525.jpg" alt="music-cover" id="cover">
+            </label>
+        </div>
+
+
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fa fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big ">
+                <i class="fa fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fa fa-forward"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="next-playing-container">
+        <h4>Next Playing ...</h4>
+        <img src="https://i.pinimg.com/originals/2a/24/28/2a2428415a8c8e8cbeac6025965d7b20.png" alt="next-music-cover" id="next-music-cover">
+
+        <h5 id="next-playing-song">Next Song</h5>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
